@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; example</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="demo-styles.css" />
+
+    <!-- The following libraries and polyfills are recommended to maximize browser support -->
+    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <!--     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> -->
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <!--     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> -->
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <!--     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> -->
+
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script
+      src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="card">
+      <!-- All you need to put beautiful, interactive 3D content on your site: -->
+      <model-viewer
+        src="  https://cdn.glitch.me/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/burger_new.glb?v=1651318460136"
+        ios-src="https://cdn.glitch.global/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/burger_new.usdz?v=1651318393416"
+        poster="  https://cdn.glitch.me/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/burger_new.glb?v=1651318460136"
+        alt="A 3D model of an astronaut"
+        shadow-intensity="1"
+        camera-controls
+        auto-rotate
+        ar
+      >
+      </model-viewer>
+      <section class="attribution">
+        <span>
+          <h1>Burger</h1>
+        </span>
+      </section>
+    </div>
+
+    <div class="card">
+      <!-- All you need to put beautiful, interactive 3D content on your site: -->
+      <model-viewer
+        src="https://cdn.glitch.me/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/olive_finch.glb?v=1651305292681"
+        ios-src="https://cdn.glitch.global/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/Olive__Finch.usdz?v=1651304926024"
+        poster="https://cdn.glitch.me/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/olive_finch.glb?v=1651305292681"
+        alt="A 3D model of an astronaut"
+        shadow-intensity="1"
+        camera-controls
+        auto-rotate
+        ar
+      >
+      </model-viewer>
+      <section class="attribution">
+        <span>
+          <h1>Olive Finch</h1>
+        </span>
+      </section>
+    </div>
+    <div class="card">
+      <!-- All you need to put beautiful, interactive 3D content on your site: -->
+      <model-viewer
+        src="https://cdn.glitch.global/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/latest.glb?v=1651242909270"
+        ios-src="https://cdn.glitch.global/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/frog.usdz?v=1651319166412"
+        poster="https://cdn.glitch.global/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/latest.glb?v=1651242909270"
+        alt="A 3D model of an astronaut"
+        shadow-intensity="1"
+        camera-controls
+        auto-rotate
+        ar
+      >
+      </model-viewer>
+      <section class="attribution">
+        <span>
+          <h1>FROG</h1>
+        </span>
+      </section>
+    </div>
+
+    <div class="card">
+      <!-- All you need to put beautiful, interactive 3D content on your site: -->
+      <model-viewer
+        src="https://cdn.glitch.global/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/cake_5.glb?v=1651261680888"
+        ios-src="https://cdn.glitch.global/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/cake_5.usdz?v=1651261835198"
+        poster="https://cdn.glitch.global/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/cake_5.glb?v=1651261680888"
+        alt="A 3D model of an astronaut"
+        shadow-intensity="1"
+        camera-controls
+        auto-rotate
+        ar
+      >
+      </model-viewer>
+      <section class="attribution">
+        <span>
+          <h1>CAKE</h1>
+        </span>
+      </section>
+    </div>
+
+    <div class="card">
+      <!-- All you need to put beautiful, interactive 3D content on your site: -->
+      <model-viewer
+        src="https://cdn.glitch.global/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/doughnut.glb?v=1650738743928"
+        ios-src="https://cdn.glitch.global/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/doughnut.usdz?v=1650738878819"
+        poster="https://cdn.glitch.global/dc3a3532-82fb-4cfe-99e5-e9d50a75f313/doughnut.glb?v=1650738743928"
+        alt="A 3D model of an astronaut"
+        shadow-intensity="1"
+        camera-controls
+        auto-rotate
+        ar
+      >
+      </model-viewer>
+      <section class="attribution">
+        <span>
+          <h1>Doughnut</h1>
+        </span>
+      </section>
+    </div>
+
+    <!-- 💁 Include both scripts below to support all browsers! -->
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </body>
+</html>
